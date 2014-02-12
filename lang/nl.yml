@@ -121,14 +121,18 @@ nl:
     SINGULARNAME: Page
     TABMAIN: Main
   SubscriptionPage:
-    DESCRIPTION: 'Generic content page'
-    PLURALNAME: 'Newsletter Subscription Pages'
-    SINGULARNAME: 'Newsletter Subscription Page'
+    DESCRIPTION: 'Pagina voor het inschrijven van een nieuws brief'
+    PLURALNAME: Nieuwsbrief Inschrijf Pagina's
+    SINGULARNAME: 'Nieuwsbrief Inschrijf Pagina'
     To: 'Subscribe to:'
   TemplateList:
     SimpleNewsletterTemplate: 'Simple Newsletter Template'
   UnsubscribeRecord:
     PLURALNAME: 'Unsubscribe Records'
     SINGULARNAME: 'Unsubscribe Record'
+  UnsubscriptionPage:
+    DESCRIPTION: 'Pagina voor het uitschrijven op een nieuwsbrief'
+    PLURALNAME: Nieuwsbrief Uitschrijf Pagina's
+    SINGULARNAME: 'Nieuwsbrief Uitschrijf Pagina'
   newsletter:
     UNSUBSCRIBEDTITLE: Unsubscribed
