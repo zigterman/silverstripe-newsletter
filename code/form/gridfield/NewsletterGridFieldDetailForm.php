@@ -19,13 +19,13 @@ class NewsletterGridFieldDetailForm_ItemRequest extends GridFieldDetailForm_Item
 	public function updateCMSActions($actions) {
 		if (empty($this->record->Status) || $this->record->Status == "Draft") {
 			// save draft button
-			$actions->fieldByName("action_doSave")
+			$actions->fieldByName("action_save")
 				->setTitle(_t('Newsletter.SAVE', "Save"))
 				->removeExtraClass('ss-ui-action-constructive')
 				->setAttribute('data-icon', 'addpage');
 		} else {    //sending or sent, "save as new" button
 			$saveAsNewButton = FormAction::create('doSaveAsNew', _t('Newsletter.SaveAsNew',"Save as new ..."));
-			$actions->replaceField("action_doSave",
+			$actions->replaceField("action_save",
 				$saveAsNewButton
 				->addExtraClass('ss-ui-action-constructive')
 				->setAttribute('data-icon', 'addpage')
@@ -38,7 +38,7 @@ class NewsletterGridFieldDetailForm_ItemRequest extends GridFieldDetailForm_Item
 			$actions->insertBefore($sendButton
 							->addExtraClass('ss-ui-action-constructive')
 							->setAttribute('data-icon', 'accept')
-							->setUseButtonTag(true), 'action_doSave');
+							->setUseButtonTag(true), 'action_save');
 		}
 		return $actions;
 	}
